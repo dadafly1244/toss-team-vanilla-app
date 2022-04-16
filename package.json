@@ -1,0 +1,23 @@
+{
+  "name": "toss-team-vanilla-app",
+  "version": "1.0.0",
+  "description": "토스팀 소개 페이지 클론 코딩",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dadafly1244/-toss-team-vanilla-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dadafly1244/-toss-team-vanilla-app/issues"
+  },
+  "homepage": "https://github.com/dadafly1244/-toss-team-vanilla-app#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
