@@ -1,0 +1,149 @@
+/* COMMON */
+body{
+  /* 어두운 회색 */
+  color: #333;
+  font-size:16px;
+  font-weight: 400;
+  /* 행간 1.4배 */
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+ /* 제거하기 */
+  height: 6000px;
+
+  /* 가려서 보이지 않는 부분 처리 */
+  /* padding-top: 56px; */
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+.inner{
+  width: 1140px;
+  margin: 0 auto;
+  position : relative;
+}
+
+
+
+
+/* HEADER */
+header {
+  /* background-color: red; */
+  background-color: transparent;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  /* backdrop-filter: blur(20px); */
+  z-index: 1;
+
+}
+
+header .filter--blur {
+  backdrop-filter: blur(20px);
+}
+
+header .inner{
+  height: 100%;
+
+
+  
+}
+header .logo{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  
+}
+header .logo img {
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+}
+
+header .inner .menu{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+header .inner .menu li{
+  margin-right: 40px;
+  cursor:pointer;
+}
+
+header .inner .menu li a{
+  color: #fff;
+}
+
+
+/* 배경이미지 1 */
+.container {
+  background-image: url(/images/kv-1.jpg);
+  background-repeat: no-repeat;
+  height: calc(100vh + 1px);
+  /* 뷰포트에 무조건 꽉차게 이미지 사이즈를 넣 */
+  background-size: cover; 
+}
+
+.main-text-container {
+  width: 100%;;
+  position: absolute;
+  bottom: 280px;
+  box-sizing: border-box;
+}
+
+.main-text {
+  margin: auto;
+  text-align: center;
+  font-size: 72px;
+  color: #fff;
+}
+
+.down-btn {
+  /* background-color: red; */
+  position: absolute;
+  bottom: 120px;
+  right: calc((100% - 28px)/2);
+
+}
+
+.down-btn img{
+  width: 28px;
+  cursor:pointer;
+  animation-name: up-down;
+  animation-delay: .3s;
+  animation-duration: 1s;
+  /* 에니메이션 계속 반복하기 */
+  animation-iteration-count: infinite;
+  /* 에니메이션이 끝이 났을 때 반대 방향으로 움직이게 하는 속성 */
+  animation-direction: alternate;
+
+}
+
+@keyframes up-down{
+  0%{
+    transform: translate(0, 0);
+    opacity:1; 
+  }
+  100%{
+    /* 밑으로 20px 만큼 가고 투명하게 바뀌기 */
+    transform: translate(0, 20px);
+    opacity:0; 
+  }
+}
+
