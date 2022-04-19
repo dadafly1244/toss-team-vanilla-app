@@ -1,5 +1,16 @@
-const headerEl = document.querySelector('hearder');
+console.log('hello')
 
-headerEl.addEventListener('scroll', function () {
-  headerEl.classList.add('filter');
-})
+const headerEl = document.querySelector('header');
+console.log(headerEl)
+
+window.addEventListener('scroll', _.throttle(function () {
+  console.log(window.scrollY);
+  if (window.scrollY > 5){
+    headerEl.classList.add('filter');
+  }else{
+    headerEl.classList.remove('filter');
+  }
+  
+},300));
+
+

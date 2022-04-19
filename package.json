@@ -4,7 +4,8 @@
   "description": "토스팀 소개 페이지 클론 코딩",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "bulid" : "parcel build index.html"
   },
   "repository": {
     "type": "git",
