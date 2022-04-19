@@ -32,9 +32,16 @@
   <script defer src="./js/main.js" ></script>
 
 
+  <!-- CHART.JS for LINE-CHART -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="./js/line-chart.js"></script>
+  
+  
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
 
 </head>
@@ -65,7 +72,7 @@
       </ul>
     </div>
   </header>
-  <div class="container">
+  <div class="first-container">
     
     <div class="main-text-container">
       <div class="main-text">
@@ -80,7 +87,12 @@
   
   
   <section>
+    <div class="second-container">
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
 
+    </div>
 
 
   </section>
