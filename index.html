@@ -35,7 +35,8 @@
   <!-- CHART.JS for LINE-CHART -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script defer src="./js/line-chart.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred@2.0.0/dist/chartjs-plugin-deferred.min.js"></script> -->
+  <script defer src="./js/line-chart2.js"></script>
   
   
   <!-- GSAP -->
@@ -85,16 +86,61 @@
     </div>
   </div>
   
-  
-  <section>
+  <!-- performance(실적) -->
+  <section >
     <div class="second-container">
-      <div>
+      <div class="chart" >
         <canvas id="myChart"></canvas>
+        <div class="chart__cover"></div>
       </div>
-
+      <div class="textgroup">
+        <div class="textgroup__title">변화를 열망하는 사람들이 모여<br>역사에 남을만한 변화를 만듭니다.</div>
+        <div class="textgroup__description">
+          <div class="description__text1">
+            <div class="text1__title">누적 가입자 수</div>
+            <div class="text1__num">2,200만+</div>
+          </div>
+          <div class="description__text2">
+            <div class="text2__title">누적 투자금액</div>
+            <div class="text2__num">1조 원+</div>
+          </div>
+          <div class="description__text3">
+            <div class="text3__title">전체 팀원 수</div>
+            <div class="text3__num">1,500명+</div>
+          </div>
+          <div class="description__text4">
+            <div class="text4__title">출시 서비스 수</div>
+            <div class="text4__num">50개+</div>
+          </div>
+          <div class="description__text5">
+            2022년 4월기준
+          </div>
+        </div>
+      </div>
     </div>
-
-
   </section>
+
+
+  <!-- Team Mission -->
+
+  <section class="team-mission">
+    <div class="textbox">
+      <div class="textbox__text">
+        <div class="text__title">
+          Team Mission
+        </div>
+        <div class="text__description">
+          토스팀은 바꾸고 싶은 세상의 모습이 있고 생각만<br>
+          해도 가슴 뛰는 목표가 있는 조직 입니다. <br>
+          어렵고, 불편하고, 멀게 느껴지는 금융이 아닌 <br>
+          누구에게나 쉽고 상식적인 금융을 만드는 것이 <br>
+          토스팀의 존재 이유입니다.
+        </div>
+      </div>
+    </div>    
+  </section>
+
+ 
+
 </body>
 </html>

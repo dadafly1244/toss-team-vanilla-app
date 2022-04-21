@@ -1,7 +1,4 @@
-console.log('hello')
-
 const headerEl = document.querySelector('header');
-console.log(headerEl)
 
 window.addEventListener('scroll', _.throttle(function () {
   console.log(window.scrollY);

@@ -1,31 +1,32 @@
 /* COMMON */
-body{
+body {
   /* 어두운 회색 */
   color: #333;
-  font-size:16px;
+  font-size: 16px;
   font-weight: 400;
   /* 행간 1.4배 */
   line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
- /* 제거하기 */
+  /* 제거하기 */
   height: 6000px;
-
   /* 가려서 보이지 않는 부분 처리 */
   /* padding-top: 56px; */
+  /* position: relative; */
 }
+
 img {
   display: block;
 }
+
 a {
   text-decoration: none;
 }
 
-.inner{
+.inner {
   width: 1140px;
   margin: 0 auto;
-  position : relative;
+  position: relative;
 }
-
 
 
 
@@ -43,50 +44,47 @@ header {
   align-items: center;
   /* backdrop-filter: blur(20px); */
   z-index: 1;
-
 }
 
-header.filter{
+header.filter {
   backdrop-filter: blur(20px);
 }
 
-header .inner{
+header .inner {
   height: 100%;
-
-
-  
 }
-header .logo{
+
+header .logo {
   height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   z-index: 1;
-  
 }
+
 header .logo img {
   height: 100%;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-header .inner .menu{
+header .inner .menu {
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
-}
-header .inner .menu li{
-  margin-right: 40px;
-  cursor:pointer;
 }
 
-header .inner .menu li a{
+header .inner .menu li {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+header .inner .menu li a {
   color: #fff;
 }
 
@@ -97,11 +95,12 @@ header .inner .menu li a{
   background-repeat: no-repeat;
   height: calc(100vh + 1px);
   /* 뷰포트에 무조건 꽉차게 이미지 사이즈를 넣 */
-  background-size: cover; 
+  background-size: cover;
 }
 
 .main-text-container {
-  width: 100%;;
+  width: 100%;
+  ;
   position: absolute;
   bottom: 280px;
   box-sizing: border-box;
@@ -119,12 +118,11 @@ header .inner .menu li a{
   position: absolute;
   bottom: 120px;
   right: calc((100% - 28px)/2);
-
 }
 
-.down-btn img{
+.down-btn img {
   width: 28px;
-  cursor:pointer;
+  cursor: pointer;
   animation-name: up-down;
   animation-delay: .3s;
   animation-duration: 1s;
@@ -132,24 +130,154 @@ header .inner .menu li a{
   animation-iteration-count: infinite;
   /* 에니메이션이 끝이 났을 때 반대 방향으로 움직이게 하는 속성 */
   animation-direction: alternate;
-
 }
 
-@keyframes up-down{
-  0%{
+@keyframes up-down {
+  0% {
     transform: translate(0, 0);
-    opacity:1; 
+    opacity: 1;
   }
-  100%{
+  100% {
     /* 밑으로 20px 만큼 가고 투명하게 바뀌기 */
     transform: translate(0, 20px);
-    opacity:0; 
+    opacity: 0;
   }
 }
 
 
+/*performance*/
 .second-container {
-  height: calc(100vh + 1px);
-  background-color: #333;
+  height: calc(110vh);
+  background-color: rgb(18, 20, 23);
+  position: relative;
 }
+.second-container .chart__cover {
+  background: linear-gradient(45deg, rgba(40, 44, 52,1), rgba(40, 44, 52,.1) 70.7%),
+            linear-gradient(360deg, rgba(40, 44, 52,1), rgba(40, 44, 52,.1) 70.7%);
+  /* background: linear-gradient(45deg,rgba(40, 44, 52,.8),rgba(40, 44, 52,.2),70%);
+              linear-gradient(360deg,rgba(40, 44, 52,.8),rgba(40, 44, 52,.2),70%); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.second-container #myChart {
+  height: 60%;
+  position: absolute;
+  bottom:0;
+  /* top: 20px; */
+  overflow: hidden;
+}
+.second-container .textgroup {
+  /* border: 10px solid #B0B8C1; */
+  width: 960px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: calc(960px/-2);
+}
+.second-container .textgroup__title {
+  /* background-color: rosybrown; */
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.second-container .textgroup__description {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.second-container .textgroup__description .description__text1,
+.second-container .textgroup__description .description__text2,
+.second-container .textgroup__description .description__text3,
+.second-container .textgroup__description .description__text4 {
+  width: 400px;
+}
+
+.second-container .textgroup__description .description__text1 .text1__title,
+.second-container .textgroup__description .description__text2 .text2__title,
+.second-container .textgroup__description .description__text3 .text3__title,
+.second-container .textgroup__description .description__text4 .text4__title {
+  /* background-color: royalblue; */
+  color: #B0B8C1;
+  font-size: 21px;
+}
+
+.second-container .textgroup__description .description__text1 .text1__num,
+.second-container .textgroup__description .description__text2 .text2__num,
+.second-container .textgroup__description .description__text3 .text3__num,
+.second-container .textgroup__description .description__text4 .text4__num {
+  /* background-color: red; */
+  color: #fff;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.second-container .textgroup__description .description__text5 {
+  color: #B0B8C1;
+  height: 20px;
+  width: 100%;
+  font-size: 14px;
+
+}
+
+
+/* Team Mission */
+
+.team-mission {
+  height: 140vh;
+  border: 2px solid red;
+  background-image: url(../images/kv-2.jpg/);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-mission .textbox{
+  width: 788px;
+  height: 406px;
+  padding: 60px 92px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(26, 30, 36, 0.65);
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-mission .textbox .textbox__text{
+  width: 604;
+
+}
+.team-mission .textbox__text .text__title{
+  
+  font-size: 30px;
+  line-height: 43.5px;
+  color: #b0b8c1;
+  margin-bottom: 20px ;
+
+}
+.team-mission .textbox__text .text__description{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 43.5px;
+  color: #fff;
+  text-align: center;
+}
+
+/* HISTORY */
 

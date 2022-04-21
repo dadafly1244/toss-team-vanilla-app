@@ -20,5 +20,8 @@
   "homepage": "https://github.com/dadafly1244/-toss-team-vanilla-app#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "chart.js": "^3.7.1"
   }
 }
