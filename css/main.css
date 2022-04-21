@@ -234,7 +234,6 @@ header .inner .menu li a {
 
 .team-mission {
   height: 140vh;
-  border: 2px solid red;
   background-image: url(../images/kv-2.jpg/);
   background-repeat: no-repeat;
   background-position: center;
@@ -281,3 +280,95 @@ header .inner .menu li a {
 
 /* HISTORY */
 
+.history {
+  height: 150vh;
+  background-color: #121417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+}
+.history .history__title {
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.45em;
+  text-align: center;
+  margin-bottom: 82px;
+}
+.history .history__timeline {
+  background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+
+}
+.history .history__timeline .timeline {
+  
+}
+.history .history__timeline .timeline li {
+  width: 500px;
+  height: 72px;
+  /* border: 1px solid blue; */
+  border-left: 4px solid rgb(51,61,75);
+  border-bottom: 1px solid;
+}
+
+.history .history__timeline .timeline li::before{
+  content: attr(data-year);
+  font-size: 20px;
+  font-weight: bold;
+  width: 40px;
+  padding: 3px;
+  /* background-color: aqua; */
+  text-align: center;
+  color: rgb(51,61,75);
+  position: relative;
+  top: -16px;
+  left: -80px;
+  cursor: pointer;
+}
+
+.history .history__timeline .timeline li:active::before{
+  color:#fff;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.history .history__timeline .timeline li::after{
+  content :"";
+  width: 12px;
+  height: 12px;
+  /* 추가를 안하니까 안나타났다... ???? 왜지...? ... */
+  display: block;
+  /* border: 4px solid rgb(51,61,75); */
+  /* border: 4px solid red; */
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(51,61,75);
+  position: relative;
+  top: -34px;
+  right: 8px;
+
+
+}
+
+
+.history .history__timeline .timeline li:active:after{
+  background: rgb(25, 31, 40);
+  /* border: 4px solid rgb(51,61,75);  */
+  box-shadow: rgb(255 255 255) 0px 0px 0px 4px;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
