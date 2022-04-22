@@ -1,3 +1,4 @@
+// 배너 스크롤시 불투명으로 바뀌는 효과
 const headerEl = document.querySelector('header');
 
 window.addEventListener('scroll', _.throttle(function () {
@@ -9,5 +10,4 @@ window.addEventListener('scroll', _.throttle(function () {
   }
   
 },300));
-
 

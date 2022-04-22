@@ -291,7 +291,7 @@ header .inner .menu li a {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0s;
-
+  position: relative;
 }
 .history .history__title {
   color: #fff;
@@ -300,14 +300,16 @@ header .inner .menu li a {
   line-height: 1.45em;
   text-align: center;
   margin-bottom: 82px;
+  position: absolute;
+  top : 50px;
 }
 .history .history__timeline {
-  background-color: greenyellow;
+  width: 500px;
+  /* background-color: greenyellow; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
+  position: absolute;
+  top: 250px;
 
 }
 .history .history__timeline .timeline {
@@ -318,7 +320,7 @@ header .inner .menu li a {
   height: 72px;
   /* border: 1px solid blue; */
   border-left: 4px solid rgb(51,61,75);
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
 }
 
 .history .history__timeline .timeline li::before{
@@ -336,7 +338,7 @@ header .inner .menu li a {
   cursor: pointer;
 }
 
-.history .history__timeline .timeline li:active::before{
+.history .history__timeline .timeline li.active::before{
   color:#fff;
   transition-property: color;
   transition-duration: 300ms;
@@ -348,10 +350,8 @@ header .inner .menu li a {
   content :"";
   width: 12px;
   height: 12px;
-  /* 추가를 안하니까 안나타났다... ???? 왜지...? ... */
+  /* ::after은 인라인요소 */
   display: block;
-  /* border: 4px solid rgb(51,61,75); */
-  /* border: 4px solid red; */
   border-radius: 50%;
   cursor: pointer;
   background-color: rgb(51,61,75);
@@ -363,7 +363,7 @@ header .inner .menu li a {
 }
 
 
-.history .history__timeline .timeline li:active:after{
+.history .history__timeline .timeline li.active::after{
   background: rgb(25, 31, 40);
   /* border: 4px solid rgb(51,61,75);  */
   box-shadow: rgb(255 255 255) 0px 0px 0px 4px;
@@ -371,4 +371,71 @@ header .inner .menu li a {
   transition-duration: 300ms;
   transition-timing-function: ease;
   transition-delay: 0s;
+}
+
+.history .timeline__items {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 50px;
+  position: absolute;
+  top: -12px;
+
+  
+}
+
+.history .timeline__items li {
+  width: 100%;
+  /* height: 72px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* transform: translateY(0px);
+  opacity: 1; */
+  animation-name: up-down;
+  animation-delay: .3s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  /* 에니메이션 계속 반복하기 */
+  /* animation-iteration-count: infinite; */
+
+
+
+
+}
+
+.history .timeline__items li h3{
+  color:#B0B8C1;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom :10px;
+
+
+}
+.history .timeline__items li h4{
+  color: #fff;
+  font-size: 17px;
+  display: block;
+  margin-bottom: 25px;
+  /* 줄바꿈이 안되었는데 pre-wrap으로 설정해주니까 줄바꿈된다!!! 왜지? 몰라 그냥 좋다 */
+  white-space: pre-wrap;
+}
+
+
+
+
+
+@keyframes up-down {
+0% {
+  transform: translate(0, 20px);
+  opacity: 0;
+}
+100% {
+  transform: translate(0, 0px);
+  opacity: 1;
+}
 }

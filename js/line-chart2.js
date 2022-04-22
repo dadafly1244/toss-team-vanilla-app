@@ -23,7 +23,7 @@ const animation = {
         return 0;
       }
       ctx.xStarted = true;
-      return ctx.index * delayBetweenPoints;
+      return ctx.index * delayBetweenPoints + 2000;
     }
   },
   y: {
