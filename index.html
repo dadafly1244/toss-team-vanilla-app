@@ -7,7 +7,6 @@
   <title>토스팀 소개</title>
   <link rel="icon" href="./favicon.png" type="image/x-icon" sizes="16x16" />
 
-
   <!-- 오픈 그래프 -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="@Toss_service" />
@@ -23,11 +22,11 @@
   <meta property="twitter:description" content="토스팀이 만드는 금융의 새로운 역사를 확인해보세요." />
   <meta property="twitter:image" content="./images/teamtoss-og.png" />
   <meta property="twitter:url" content="https://toss.im/team" />
-  
 
   <!-- 브라우저 기본 스타일 제거 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
+  <!-- css & js 연결 -->
   <link rel="stylesheet" href="./css/main.css">
   <script defer src="./js/main.js" ></script>
   <script defer src="./js/timeline.js"></script>
@@ -40,9 +39,14 @@
   
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
+
+
+
+
+
+
 
 </head>
 <body>
@@ -51,7 +55,8 @@
   <header>
     <div class="inner">
       <div class="logo">
-        <img src="./images/logo-toss-white.png" alt="toss">
+        <img class="white" src="./images/logo-toss-white.png" alt="toss">
+        <img class="blue invisible" src="./images/logo-toss-blue.png" alt="toss">
       </div>
       <ul class="menu">
         <li>
@@ -73,7 +78,6 @@
     </div>
   </header>
   <div class="first-container">
-    
     <div class="main-text-container">
       <div class="main-text">
         금융, 그 이상의<br/>
@@ -121,7 +125,6 @@
 
 
   <!-- Team Mission -->
-
   <section class="team-mission">
     <div class="textbox">
       <div class="textbox__text">
@@ -142,28 +145,47 @@
 
  <!-- HISTORY TIMELINE -->
  <section class="history">
-  <div class="history__title">
-    토스팀은 오늘도<br>
-    위대한 역사를 만들고 있습니다.
-  </div>
-  <div class="history__timeline">
-    <ul class="timeline">
-      <li class="year active" data-year='2021'></li>
-      <li class="year" data-year='2020'></li>
-      <li class="year" data-year='2019'></li>
-      <li class="year" data-year='2018'></li>
-      <li class="year" data-year='2017'></li>
-      <li class="year" data-year='2016'></li>
-      <li class="year" data-year='2015'></li>
-      <li class="year" data-year='2014'></li>
-      <li class="year" data-year='2013'></li>
-    </ul>
-    <ul class="timeline__items">
-      
-    </ul>
-  </div>
-</section>
+    <div class="history__title">
+      토스팀은 오늘도<br>
+      위대한 역사를 만들고 있습니다.
+    </div>
+    <div class="history__timeline">
+      <ul class="timeline">
+        <li class="year active" data-year='2021'></li>
+        <li class="year" data-year='2020'></li>
+        <li class="year" data-year='2019'></li>
+        <li class="year" data-year='2018'></li>
+        <li class="year" data-year='2017'></li>
+        <li class="year" data-year='2016'></li>
+        <li class="year" data-year='2015'></li>
+        <li class="year" data-year='2014'></li>
+        <li class="year" data-year='2013'></li>
+      </ul>
+      <ul class="timeline__items"></ul>
+    </div>
+  </section>
  
+  <!-- GOAL -->
+  <section class="goal">
+    <div class="goal__title">
+      토스가 바꿀 금융
+    </div>
+    <div class="goal__subtitle">
+      모두를 위한, 새로운 금융을 만들고자 합니다.
+    </div>
+    <div class="goal__items">
+      <div class="item1">
+        
+      </div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+      <div class="item6"></div>
+    </div>
+  </section>
+
+
 
 </body>
 </html>
