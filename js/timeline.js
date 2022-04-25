@@ -3,13 +3,6 @@ const yearEls = document.querySelectorAll('.year')
 let isActiveYear = false;
 let currentActiveYear =2021;
 
-
-
-
-console.log('currentActiveYear', currentActiveYear)
-
-
-
 const yearData = {
   2021 : [
     ['2021.02' , '(주)토스증권 출범'],
@@ -67,15 +60,8 @@ const yearData = {
   ]
 }
 
-//console.log(yearData[2021][0][0],yearData[2021][0][1])
-
 const findActiveYearEl = document.querySelector('.active')
-console.log( findActiveYearEl)
-
-console.log(yearData[currentActiveYear][0][0],yearData[currentActiveYear][0][1])
-
 const timelineUlEl = document.querySelector('.timeline__items')
-console.log(timelineUlEl)
 
 for (let i = 0; i < yearData[currentActiveYear].length ; i += 1) {
   const liEl = document.createElement('li') // li요소 생성
@@ -89,32 +75,26 @@ for (let i = 0; i < yearData[currentActiveYear].length ; i += 1) {
 }
 
 
-
-
 for (let i = 0 ; i < yearEls.length ; i += 1 ) {
   yearEls[i].addEventListener('click', function (currentActiveYear) {
     isActiveYear = !isActiveYear  
     if (isActiveYear) { // 클릭되었다면!! 
       // 먼저 현재 active 되어있는 객채를 찾아준다. 제일 처음에는 2021을 찾을 것이다!!
       const findActiveEl = document.querySelector('.active')
-
       //ul태그안의 내용을 지운다. 
-      
       const findUlForDeleteEl = document.querySelector('.timeline__items')
       const findLiForDeleteAllEls = findUlForDeleteEl.querySelectorAll('li')
 
       for (let i = 0 ; i < findLiForDeleteAllEls.length ; i += 1){
         findUlForDeleteEl.removeChild(findLiForDeleteAllEls[i])
       }
-     
-
+  
       // 현재 active 가 있는 요소에서 active 클래스를 제거해준다!
       findActiveEl.classList.remove('active') 
       // 클릭한 요소에 active 클래스를 추가한다!! 
       yearEls[i].classList.add('active')
       currentActiveYear = yearEls[i].dataset.year
-      console.log('currentActiveYear', currentActiveYear)
-
+      //console.log('currentActiveYear', currentActiveYear)
 
       for (let i = 0; i < yearData[currentActiveYear].length ; i += 1) {
         const liEl = document.createElement('li') // li요소 생성
@@ -126,11 +106,8 @@ for (let i = 0 ; i < yearEls.length ; i += 1 ) {
         liEl.appendChild(h4El)
         timelineUlEl.appendChild(liEl) // li요소를 ul에 추가! 
       }
-    
-      console.log(timelineUlEl)
+      //console.log(timelineUlEl)
       
-
-
       return currentActiveYear = currentActiveYear
     }
   })
