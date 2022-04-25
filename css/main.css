@@ -129,6 +129,11 @@ header.filter {
   backdrop-filter: blur(20px);
 }
 
+header.bg--white {
+  background-color: #fff;
+  border-bottom: 1px solid #333;
+}
+
 header .inner {
   height: 100%;
 }
@@ -174,6 +179,10 @@ header .inner .menu li {
 
 header .inner .menu li a {
   color: #fff;
+}
+
+header .inner .menu li a.bg--white {
+  color: #333;
 }
 
 
