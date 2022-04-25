@@ -84,7 +84,6 @@ for (let i = 0 ; i < yearEls.length ; i += 1 ) {
       //ul태그안의 내용을 지운다. 
       const findUlForDeleteEl = document.querySelector('.timeline__items')
       const findLiForDeleteAllEls = findUlForDeleteEl.querySelectorAll('li')
-
       for (let i = 0 ; i < findLiForDeleteAllEls.length ; i += 1){
         findUlForDeleteEl.removeChild(findLiForDeleteAllEls[i])
       }
@@ -107,7 +106,7 @@ for (let i = 0 ; i < yearEls.length ; i += 1 ) {
         timelineUlEl.appendChild(liEl) // li요소를 ul에 추가! 
       }
       //console.log(timelineUlEl)
-      
+      //현재 클릭한 년도 리턴해주기. 
       return currentActiveYear = currentActiveYear
     }
   })
