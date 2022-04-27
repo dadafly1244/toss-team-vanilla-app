@@ -739,9 +739,25 @@ header .inner .menu li a.bg--white {
 
 .partnership .partnership__contianer{
   width: 850px;
-  transform: translateY(5px); 
-  opacity: 0;
 }
+.partnership .partnership__contianer.view{
+  animation-name: up;
+  animation-duration: 2s;
+}
+
+
+@keyframes up {
+  0%{
+    transform: translateY(10px); 
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px); 
+    opacity: 1;
+  }
+}
+
+
 .partnership .partnership__contianer .partnership__title{
   text-align: center;
   font-size: 46px;
@@ -891,10 +907,112 @@ header .inner .menu li a.bg--white {
   word-break: keep-all;
   transition: all 0.2s ease 0s;
 }
-/* .news .news__container .news__items .next__icon{
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  color: yellow;
+
+
+
+/* FOOTER */
+.footer__container {
+  background-color: #f9fafb;
+  padding: 50px 0 100px;
 }
- */
+
+.footer__container a {
+  text-decoration: none;
+  color: #6b7684;
+}
+
+.footer__container a:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+  color: #0056b3 !important;
+}
+
+.footer__container .footer__inner {
+  max-width: 1064px;
+  margin: auto;
+  padding: 0 67px;
+  box-sizing: border-box;
+}
+
+.footer__container .site-group-list {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.footer__container .site-group-list .site-group {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  color: #6b7684;
+  list-style: none;
+  font-size: 15px;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+.footer__container .site-group-list .site-group-title {
+  padding-bottom: 5px;
+  color: #333d4b;
+  font-weight: 700;
+}
+
+.footer__container .site-group-list .site-group-item>a {
+  display: block;
+  text-decoration: none;
+  color: #6b7684;
+}
+
+.footer__container .address {
+  color: #8b95a1;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 20px;
+  white-space: pre-wrap;
+}
+
+.footer__container .address .address__company-name {
+  display: block;
+  padding-bottom: 16px;
+  color: #333d4b;
+  font-size: 15px;
+}
+
+.footer__container .term-list {
+  display: flex;
+  margin: 0;
+  padding: 24px 0 30px;
+  list-style: none;
+}
+
+.footer__container .term-list .term {
+  padding-right: 30px;
+}
+
+.footer__container .term-list .term>a {
+  color: #6b7684;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footer__container .social-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__container .social-list .social-list-item {
+  margin-right: 8px;
+}
+
+.footer__container .social-list .social-list-item>a {
+  cursor: pointer;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: opacity .2s ease;
+  opacity: .7;
+}
+
+.footer__container .social-list .social-list-item>a:hover {
+  opacity: 1;
+}

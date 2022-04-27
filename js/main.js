@@ -4,9 +4,9 @@ const logoWhightEl = document.querySelector('.logo .white')
 const logoBlueEl = document.querySelector('.logo .blue')
 const imgInvisible = document.querySelector('.invisible');
 const headerMenuEls = headerEl.querySelectorAll('a')
-
+const partnershipEl = document.querySelector('.partnership__contianer')
 window.addEventListener('scroll', _.throttle(function () {
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
   if (window.scrollY < 5){
     headerEl.classList.remove('filter');
     changeHeaderColor(false)
@@ -19,6 +19,13 @@ window.addEventListener('scroll', _.throttle(function () {
     //timeline 이후부터 로고 색을 파란색으로 변경하기. 
     changeHeaderColor(true)
   } 
+  if (window.scrollY > 5500){
+    //사용자가 스크롤을 6000까지 내리면 partnership 애니매이션 동작
+    partnershipEl.classList.add('view')
+  }
+  else{
+    partnershipEl.classList.remove('view')
+  }
 },300));
 
 function changeHeaderColor(isWhiteBackground){ //header 색 바꾸는 함수
@@ -41,12 +48,14 @@ function changeHeaderColor(isWhiteBackground){ //header 색 바꾸는 함수
 }
 
 
+//카드 클릭시 변화! 
 const cardEls = document.querySelectorAll('.card');
-
 for (let i = 0; i < cardEls.length; i += 1){
   
   cardEls[i].addEventListener('click',function(){
     cardEls[i].classList.toggle('item--focus')
 })
 }
+
+
 
