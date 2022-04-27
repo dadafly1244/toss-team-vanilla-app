@@ -41,4 +41,12 @@ function changeHeaderColor(isWhiteBackground){ //header 색 바꾸는 함수
 }
 
 
+const cardEls = document.querySelectorAll('.card');
+
+for (let i = 0; i < cardEls.length; i += 1){
+  
+  cardEls[i].addEventListener('click',function(){
+    cardEls[i].classList.toggle('item--focus')
+})
+}
 
