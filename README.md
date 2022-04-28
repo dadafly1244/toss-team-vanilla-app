@@ -18,9 +18,19 @@
 
 ## Description(설명)
 
-토스 팀 페이지를 HTML, CSS, JS를 사용하여 클론 코딩하였다. 
+토스 팀 페이지를 HTML, CSS, JS를 사용하여 클론 코딩하였다.   
 
-HEADER, PERFORMANCE, TEAM MISSION, HISTORY TIMELINE, CARDS, PARTNERSHIP, NEWS, FOOTER로 총 9개의 section으로 나누어져 있다. 
+HEADER, INTRO, PERFORMANCE, TEAM MISSION, HISTORY TIMELINE, CARDS, PARTNERSHIP, NEWS, FOOTER로 총 10개의 section으로 나누어져 있다.
+
+- HEADER : 스크롤 범위에 따라서 해더의 배경에 블러처리나 배경색 변경, 로고이미지 변경, 메뉴 글자색 변경
+- INTRO :  소개글, 화살표 애니메이션 적용
+- PERFORMANCE : 실적 소개 문구와 실적이 상승하는 것을 시각적으로 보여줄 수 있는 그래프를 chart.js로 삽입함.
+- TEAM MISSION : 팀 미션 문구, 배경 이미지가 스크롤 해도 움직이지 않게 보여줌. 
+- HISTORY TIMELINE : 원하는 년도를 클릭하면 내용을 js로 삽입함. 
+- CARDS : 카드를 클릭하면 특정 글자는 사라지고, 특정 글자는 나타남.
+- PARTNERSHIP : 해당 페이지로 스크롤 하면 내용이 살짝 위로 올라오는 애니메이션이 동작함
+- NEWS : 기사 내용 부분에 마우스를 가져가면 크기가 조금 커지고, 화살표 색이 변함. 
+- FOOTER : 푸터 구현...
 
 <br />
 
