@@ -1,30 +1,40 @@
-# toss-team-vanilla-app
+## toss-team-vanilla-app
 토스 팀 페이지 클론 코딩
+<br /><br />
 
 ***
-> 원본 사이트 : **https://toss.im/team**
 
-  
-> demo : https://charming-baklava-07892c.netlify.app/
+> 원본 사이트  :  **https://toss.im/team**
+
+> demo  :  **https://charming-baklava-07892c.netlify.app/**
+
+<br />
+<br />
 
 ***
-***
 
+<br />
+<br />
 
 ## Description(설명)
 
 토스 팀 페이지를 HTML, CSS, JS를 사용하여 클론 코딩하였다. 
 
-HEADER, performance, Team Mission, HISTORY TIMELINE, CARDS, Partnership, NEWS, FOOTER로 총 9개의 section으로 나누어져 있다. 
+HEADER, PERFORMANCE, TEAM MISSION, HISTORY TIMELINE, CARDS, PARTNERSHIP, NEWS, FOOTER로 총 9개의 section으로 나누어져 있다. 
 
+<br />
 
 ***
-***
+
+<br />
+<br />
 
 
 ## Getting Started 
 
-* 개발을 위한 parcel-bundler 설치
+<br />
+
+### 개발을 위한 parcel-bundler 설치
 ```shell
 $ npm install -D parcel-bundler
 ```
@@ -35,21 +45,27 @@ $ npm install -D parcel-bundler
     "build": "parcel build index.html"
   },
 ```
+<br />
 
 ### 사용한 cdn
 'index.html'파일의 `<head>></head>` 테그 사이에 넣으면 된다. 
-1. Chart.js
+<br />
+
+#### 1. Chart.js
 ```html
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
-2. GSAP and Lodash
+<br />
+
+#### 2. GSAP and Lodash
 
 ```html 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
+<br />
 
-3. Material Icon
+#### 3. Material Icon
 
 html에 삽입한 코드   
 
@@ -88,7 +104,9 @@ css에 삽입한 코드
 ```
 css에서  `font-family: 'Material Icons';`코드를 삽입한뒤 `content: "arrow_forward";` 다음과 같이 content 속성에 기호 이름을 쓰면 Material Icon이 출력된다! 
 
-4. 웹폰트 사용
+<br />
+
+#### 4. 웹폰트 사용
 
 'main.css' 파일에 다음 코드를 위에 삽입해서 사용
 ```css
@@ -141,8 +159,14 @@ css에서  `font-family: 'Material Icons';`코드를 삽입한뒤 `content: "arr
 }
 
 ```
+<br />
+<br />
+
 ***
-***
+
+<br />
+<br />
+
 ## Files
 
 * index.html : 홈페이지의 html 구조 코드
@@ -157,7 +181,14 @@ css에서  `font-family: 'Material Icons';`코드를 삽입한뒤 `content: "arr
 * js/chart.js : 필요없는 파일
   
 * images/ : 프로젝트에 필요한 이미지가 들어있는 폴더
-   
+  
+<br />
+<br />
+
+***
+
+<br />
+<br />
   
 ## License
 This project is licensed under the MIT License
